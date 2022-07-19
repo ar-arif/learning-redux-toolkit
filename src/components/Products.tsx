@@ -11,7 +11,7 @@ export default () => {
 			// const res = await fetch("https://fakestoreapi.com/products");
 			// const resData = await res.json();
 			const data = demoData;
-			console.log(data);
+			// console.log(data);
 			setProducts(data);
 		};
 		fetchProducts();
@@ -23,8 +23,8 @@ export default () => {
 
 	return (
 		<div className="productsWrapper">
-			{products.map((product: any) => (
-				<div className="card" key={product.id}>
+			{products.map((product: any, i: number) => (
+				<div className="card" key={i}>
 					<img src={product.image} />
 					<h4>{product.title}</h4>
 					<h5>{product.price}</h5>

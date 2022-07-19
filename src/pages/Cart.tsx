@@ -11,8 +11,8 @@ export default () => {
 		<div>
 			<h3>Cart</h3>
 			<div className="cartWrapper">
-				{products.map((product: any) => (
-					<div className="cartCard">
+				{products.map((product: any, i: number) => (
+					<div className="cartCard" key={i}>
 						<img src={product.image} />
 						<h5>{product.title}</h5>
 						<h5>{product.price}</h5>

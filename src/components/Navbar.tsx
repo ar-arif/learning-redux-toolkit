@@ -10,6 +10,7 @@ export default () => {
 				alignItems: "center",
 				justifyContent: "space-between",
 			}}
+			className="nav-fixed"
 		>
 			<span className="logo">
 				<b>REDUX STORE</b>
